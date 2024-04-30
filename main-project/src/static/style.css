@@ -1,0 +1,225 @@
+/* Sets styling for the entire body */
+body{
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif !important;
+    color: #dee8de !important;
+    background-image: url("board.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Sets styling for stuff inside content div */
+.content {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    margin: 0;
+}
+
+/* Sets styling for stuff inside content div */
+.content button, .content p {
+    margin-bottom: 10px; 
+}
+
+/* Sets styling for stuff inside stocks div */
+.stocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 1070px) {
+    .stocks {
+        width: auto;
+    }
+  }
+
+.stock-short-name {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    margin-left: 8px;
+    margin-top: 0px;
+}
+
+.stock-price {
+    margin-top:-8px;
+    margin-left: 8px;
+    font-size: 35px;
+    color: rgb(240, 240, 240) !important;
+    text-shadow: 1.5px 1.5px #393636;
+    font-weight: 500 !important;
+}
+
+/* Sets styling for stuff inside indexes div */
+.indexes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Sets styling for each individual stock */
+.stock {
+    margin: 1.5px;
+    width: 205px;
+    align-items: center;
+    border: 0.01px solid rgb(134, 134, 134);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+    box-sizing: border-box; 
+}
+
+.stock-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stock-row div {
+    margin-left: 8px;
+    margin-bottom: 0px;
+    margin-top: -5px;
+}
+
+.stock-row-percent-change {
+    margin-right: 5px;
+}
+
+
+/* Sets styling for each individual index */
+.index {
+    margin: 1.5px;
+    margin-bottom: 20px;
+    width: 205px;
+    align-items: center;
+    border: 0.01px solid rgb(184, 184, 184);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sets styling for explanation div */
+.explanation {
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* Sets styling for the top navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #424549;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+/* Sets styling for the back button */
+#back-button {
+    background-color: rgba(0, 136, 169, 1);
+    color: white;
+    padding: 8px 16px; 
+    border: none; 
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: all 0.3s ease 0s;
+}
+
+/* Sets styling for the button to switch between light and dark modes */
+#dark-mode-button {
+    background-color: #7289da;
+    color: white;
+    padding: 8px 16px; 
+    border: none; 
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+}
+
+/* Changes color of the back button and mode switch button when hovered over */
+#dark-mode-button:hover,
+#back-button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* Sets styling for the entire page if user switches to dark mode */
+body.dark-mode {
+    background-color: 	#36393e; 
+    color: #ffffff; 
+    
+}
+
+/* Sets styling for the text in navbar */
+.navbar-title {
+    
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0; /* Remove default margin */
+    flex-grow: 1; /* Allow the title to grow and take up available space */
+    text-align: center; /* Center the title text horizontally */
+}
+
+
+
+/* Sets styling for the buttons in navbar */
+.navbar-buttons {
+    display: flex; 
+    align-items: center; 
+}
+
+/* Sets styling for the container with the plot */
+.plot-container {
+    margin: 50px auto; 
+    max-width: 60%; 
+}
+
+/* Sets styling for the plot itself */
+#plot {
+    height: 500px; 
+}
+
+/* Sets styling for the navbar at the bottom of the page */
+.bottom-navbar {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    color: white;
+    background-color: #24252A; 
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    align-items: center;
+    justify-content: space-around;
+}
+.up-arrow {
+    color: green;
+}
+.down-arrow {
+    color: red;
+}
+.no-movement-symbol {
+    color: gray;
+    font-size: larger; /* Increase font size */
+    font-weight: bold; /* Make it bold */
+}
+
+#rec-button {
+    background-color: #7289da !important;
+    font-family: 'Quicksand', sans-serif !important;
+}
